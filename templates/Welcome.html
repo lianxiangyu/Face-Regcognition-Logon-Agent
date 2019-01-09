@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAC Face Recognition Logon Agent</title>
+</head>
+<body>
+  <h1>Welcome SAC compound logon client!</h1>
+  <div id="frontend">
+    <button id="manuallogon" onclick="location.href='https://demo-custom.cn1.sapbusinessobjects.cloud'">Logon SAC manually!</button>
+    <button id="facelogon">Logon with Face Recognition!</button>
+    <script type="text/javascript" src="{{ url_for('static', filename='frontend.js') }}"></script>
+  </div>
+  <img id="video" src="{{ url_for('video_viewer') }}">
+  <!--<iframe id="sac" src="https://demo-custom.cn1.sapbusinessobjects.cloud"></iframe>-->
+</body>
+</html>
